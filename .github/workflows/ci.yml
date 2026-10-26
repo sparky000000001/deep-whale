@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Syntax check client bundle
+        run: node --check lib/client.js
+
+      - name: Syntax check host bundle
+        run: node --check lib/index.js
+
+      - name: Validate package.json
+        run: node -e "const p=JSON.parse(require('fs').readFileSync('package.json','utf8')); ['name','version','dsh'].forEach(k=>{ if(!p[k]) throw new Error('missing '+k) }); console.log('package.json OK:', p.name, p.version)"
+
+      - name: Validate cordis patch YAML (structure smoke test)
+        run: |
+          node -e "
+          const fs = require('fs');
+          const txt = fs.readFileSync('cordis.patch.yml', 'utf8');
+          if (!txt.includes('- insert:') || !txt.includes('deep-line-theme')) {
+            throw new Error('cordis.patch.yml missing insert row');
+          }
+          console.log('cordis.patch.yml OK');
+          "
+
+      - name: Ensure no bundled artwork sneaks in
+        run: |
+          if grep -q "data:image" lib/client.js; then
+            echo "ERROR: lib/client.js contains embedded image data (should be uploaded by the user at runtime)"
+            exit 1
+          fi
+          echo "no embedded artwork OK"
