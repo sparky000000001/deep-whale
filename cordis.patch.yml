@@ -1,0 +1,5 @@
+# 深鲸线稿主题：插入插件行
+# 撤销：删掉下面这一条 insert，或 dsh plugin remove dsh-deep-line-theme
+- insert:
+    - id: deep-line-theme
+      name: 'dsh-deep-line-theme'

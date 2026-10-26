@@ -1,0 +1,23 @@
+# 依赖
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+
+# 本地/个人资源（背景图、测试图一律不入库）
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.ico
+!icon.svg
+
+# 构建与缓存
+dist/
+.tmp/
+*.log
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/

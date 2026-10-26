@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Deep Line theme">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0f1420"/>
+  <path d="M10 34c6-9 14-14 22-14 9 0 16 6 20 14-4 8-11 14-20 14-8 0-16-5-22-14z" fill="none" stroke="#f2f4f8" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M52 34c3 0 5-2 5-5 2 3 2 7 0 10-1 2-3 3-5 3" fill="none" stroke="#f2f4f8" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="26" cy="31" r="2.6" fill="#f2f4f8"/>
+  <path d="M14 30c-3-2-6-3-9-3M14 38c-3 2-6 3-9 3" stroke="#9fb4d8" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

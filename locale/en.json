@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Deep Line",
+    "description": "Paints an ink-line whale artwork backdrop behind the Web UI: white paper with black lines in light mode, auto-inverted to black with white lines in dark mode. The artwork is inlined in the plugin and reads no other skin's assets."
+  }
+}
