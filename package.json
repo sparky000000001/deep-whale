@@ -1,6 +1,6 @@
 {
   "name": "dsh-deep-line-theme",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Deep Line theme for DeepSeek Harness: line-art backdrop, accent / border / fill colors and text effects, all adjustable in Settings.",
   "type": "module",
   "main": "lib/index.js",
