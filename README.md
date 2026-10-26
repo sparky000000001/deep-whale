@@ -1,4 +1,4 @@
-# 深鲸线稿主题（dsh-deep-line-theme）
+# 深鲸线稿主题（deep-whale）
 
 给 DeepSeek Harness 的 Web 界面加一层**线稿背景**，并把主题色、边框色、填充色、文字效果做成设置页里的可调控件。
 
@@ -24,7 +24,7 @@
 ### 方式一：从本地目录安装
 
 ```bash
-dsh plugin --profile desktop add /path/to/dsh-deep-line-theme
+dsh plugin --profile desktop add /path/to/deep-whale
 ```
 
 （桌面版的 profile 名通常是 `desktop`；CLI Web 版按你的实际 profile 改。）
@@ -50,7 +50,7 @@ icon.svg            图标
 编辑 `lib/client.js`，把：
 
 ```js
-var FEEDBACK_URL = 'https://github.com/YOUR_NAME/dsh-deep-line-theme/issues';
+var FEEDBACK_URL = 'https://github.com/sparky000000001/deep-whale/issues';
 ```
 
 改成你自己的仓库 Issues 地址。

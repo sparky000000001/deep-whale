@@ -18,19 +18,30 @@
     "icon.svg"
   ],
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
-      "inject": ["@deepseek-ai/dsh-client-ui-layout"]
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
     }
   },
-  "keywords": ["dsh", "deepseek-harness", "theme", "plugin", "line-art"],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "theme",
+    "plugin",
+    "line-art"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_NAME/dsh-deep-line-theme.git"
+    "url": "https://github.com/sparky000000001/deep-whale.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_NAME/dsh-deep-line-theme/issues"
-  }
+    "url": "https://github.com/sparky000000001/deep-whale/issues"
+  },
+  "homepage": "https://github.com/sparky000000001/deep-whale#readme"
 }
